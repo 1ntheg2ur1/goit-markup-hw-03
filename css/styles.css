@@ -1,0 +1,246 @@
+:root {
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
+  --logo-part-color: #2196f3;
+  --main-color: #ffffff;
+  --bcnd-col: #f5f4fa;
+  --main-font: 'Roboto';
+  --secondary-font: 'Raleway';
+  --main-font-weight: 400;
+}
+
+/* Загальні властивості сторінки */
+
+body {
+  font-family: var(--main-font), sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: var(--main-font-weight);
+  color: var(--main-text-color);
+  background-color: var(--main-color);
+}
+
+/* Стилі логотипу */
+
+.logo-first-part,
+.logo-second-part,
+.logo-second-part-footer {
+  font-family: var(--secondary-font), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--logo-part-color);
+}
+
+.logo-second-part {
+  color: #000000;
+}
+
+.logo-second-part-footer {
+  color: var(--main-color);
+}
+
+
+
+/* Список навігації + пошта та номер */
+
+/* .header {
+  background-color: var(--main-color);
+} */
+
+.header-item,
+.header-number,
+.header-email {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.header-number,
+.header-email {
+  color: var(--main-text-color);
+}
+
+/* Блок-герой */
+
+.hero {
+  text-align: center;
+}
+
+.hero-heading {
+  font-family: var(--main-font), sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.hero-button {
+  font-family: var(--main-font), sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--logo-part-color);
+  color: var(--main-color);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+}
+
+.hero-button:hover {
+  background-color: #188CE8;
+} 
+
+/* 
+.hero-button:hover {
+  color: var(--secondary-text-color);
+  background-color: var(--main-color);
+  border-color: #2f303a;
+} */
+
+/* Переваги */
+
+.benefits-heading {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+/* Чим ми займаємось? */
+
+.activity-heading {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+/* Команда */
+
+.team {
+  background-color: var(--bcnd-col);
+}
+
+.team-heading {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+}
+
+.speciality {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.team-list-item {
+  background-color: var(--main-color);
+}
+
+/* Адреса та контакти (футер) */
+
+.adress .adress-item {
+  color: var(--main-color);
+  font-style: normal;
+}
+
+.adress .mail,
+.adress .phone {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+/* Темний фон для Hero та footer */
+
+.footer,
+.hero {
+  background-color: #2f303a;
+}
+
+/* Налаштування кнопок в Portfolio */
+
+.button {
+  font-family: var(--main-font), sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  background-color: var(--bcnd-col);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border-color: transparent;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--main-color);
+  background-color: var(--logo-part-color);
+}
+
+/* Відключення стандартної стилізації списків та посилань */
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Поточна сторінка */
+
+.current {
+  color: var(--logo-part-color);
+}
+
+/* Стилізація Portfolio */
+
+.portfolio-list-item {
+  background-color: var(--main-color);
+}
+
+.portfolio-item-heading {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+
+.project-description {
+  font-family: var(--main-font), sans-serif;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+/* Властивості hover та focus на всі посилання*/
+
+.link:hover,
+.link:focus {
+  color: var(--logo-part-color);
+}
