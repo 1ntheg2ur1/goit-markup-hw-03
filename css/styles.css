@@ -162,6 +162,11 @@ body {
   margin-bottom: 94px;
 }
 
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .benefits-heading {
   font-size: 14px;
   line-height: 1.14;
@@ -169,6 +174,15 @@ body {
   color: var(--secondary-text-color);
   margin: 0;
   margin-bottom: 10px;
+}
+
+.benefits-item {
+  width: 270px;
+  /* outline: 2px solid tomato; */
+}
+
+.benefits-item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .list p {
@@ -190,6 +204,18 @@ body {
   margin-bottom: 50px;
 }
 
+.list.activity-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.activity-item > img {
+  display: block;
+}
 /* Команда */
 
 .team {
