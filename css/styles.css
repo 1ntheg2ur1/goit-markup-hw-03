@@ -47,6 +47,12 @@ body {
   background-color: var(--main-color);
 } */
 
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC;
+}
+
 .header-item,
 .header-number,
 .header-email {
@@ -242,6 +248,7 @@ body {
 .list {
   list-style: none;
   margin: 0;
+  padding-left: 0;
 }
 
 .link {
@@ -255,6 +262,10 @@ body {
 }
 
 /* Стилізація Portfolio */
+
+.header-margin {
+  margin-bottom: 94px;
+}
 
 .portfolio-list-item {
   background-color: var(--main-color);
