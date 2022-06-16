@@ -156,6 +156,7 @@ body {
 .team {
   background-color: var(--bcnd-col);
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .team-heading {
@@ -267,8 +268,16 @@ body {
   margin-bottom: 94px;
 }
 
+.list-margin {
+  margin-bottom: 94px;
+}
+
 .portfolio-list-item {
   background-color: var(--main-color);
+}
+
+.list-button {
+  margin-bottom: 50px;
 }
 
 .portfolio-item-heading {
@@ -276,6 +285,8 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 
 .project-description {
@@ -284,6 +295,18 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+.item-padding {
+  padding: 20px 24px;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  width: 370px;
+}
+
+.img {
+  display: block;
 }
 
 /* Властивості hover та focus на всі посилання*/
@@ -298,4 +321,5 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  /* outline: 1px solid tomato; */
 }
