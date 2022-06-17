@@ -24,7 +24,7 @@
 /* Загальні властивості сторінки */
 
 body {
-  width: 1600px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   font-family: var(--main-font), sans-serif;
