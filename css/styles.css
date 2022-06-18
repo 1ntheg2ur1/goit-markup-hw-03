@@ -21,12 +21,13 @@
   text-decoration: none;
 }
 
+h1, h2, h3, p {
+  margin: 0;
+}
+
 /* Загальні властивості сторінки */
 
 body {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   font-family: var(--main-font), sans-serif;
   font-size: 14px;
   line-height: 1.71;
@@ -34,6 +35,25 @@ body {
   font-weight: var(--main-font-weight);
   color: var(--main-text-color);
   background-color: var(--main-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  padding: 0 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid tomato; */
 }
 
 /* Стилі логотипу */
@@ -58,13 +78,7 @@ body {
 
 /* Список навігації + пошта та номер */
 
-/* .header {
-  background-color: var(--main-color);
-} */
-
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -76,6 +90,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+
+.list .link.header-item,
+.list .header-email,
+.list .header-number {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-flex > .nav > .link {
+  padding-top: 24px;
+  padding-bottom: 25px;
+} 
 
 .header-number,
 .header-email {
@@ -114,7 +140,6 @@ body {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-bottom: 94px;
 }
 
 .hero-heading {
@@ -128,7 +153,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-color);
-  margin-top: 0;
   margin-bottom: 30px;
 }
 
@@ -153,7 +177,8 @@ body {
   margin-right: auto;
 }
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   background-color: #188ce8;
 }
 
@@ -172,13 +197,12 @@ body {
   overflow: hidden;
 }
 
-.benefits {
-  margin-bottom: 94px;
+.activity {
+  padding-top: 0;
 }
 
 .benefits-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .benefits-heading {
@@ -186,57 +210,40 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  margin: 0;
   margin-bottom: 10px;
 }
 
 .benefits-item {
   width: 270px;
-  /* outline: 2px solid tomato; */
 }
 
 .benefits-item:not(:first-child) {
   margin-left: 30px;
 }
 
-.list p {
-  margin: 0;
-}
-
 /* Чим ми займаємось? */
-
-.activity {
-  margin-bottom: 94px;
-}
 
 .activity-heading {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-text-color);
-  margin: 0;
   margin-bottom: 50px;
 }
 
 .list.activity-list {
   display: flex;
-  justify-content: space-between;
+
 }
 
 .activity-item:not(:first-child) {
   margin-left: 30px;
 }
 
-.activity-item > img {
-  display: block;
-}
-
 /* Команда */
 
 .team {
   background-color: var(--bcnd-col);
-  padding-bottom: 94px;
-  padding-top: 94px;
 }
 
 .team-heading {
@@ -245,7 +252,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin: 0;
   margin-bottom: 50px;
 }
 
@@ -258,7 +264,6 @@ body {
   font-size: 16px;
   line-height: 1.2;
   color: var(--secondary-text-color);
-  margin: 0;
   margin-bottom: 10px;
 }
 
@@ -281,7 +286,6 @@ body {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .team-list-item:not(:first-child) {
@@ -294,10 +298,6 @@ body {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.portfolio-footer {
-  margin-top: 94px;
 }
 
 .logo-margin {
@@ -351,10 +351,6 @@ body {
 
 /* Стилізація Portfolio */
 
-.header-margin {
-  margin-bottom: 94px;
-}
-
 .list-margin {
   display: flex;
   flex-wrap: wrap;
@@ -398,7 +394,6 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
-  margin-top: 0;
   margin-bottom: 4px;
 }
 
@@ -418,10 +413,6 @@ body {
   width: 370px;
 }
 
-.img {
-  display: block;
-}
-
 /* Властивості hover та focus на всі посилання*/
 
 .link:hover,
@@ -429,10 +420,4 @@ body {
   color: var(--logo-part-color);
 }
 
-.container {
-  padding: 0 15px;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  /* outline: 1px solid tomato; */
-}
+
